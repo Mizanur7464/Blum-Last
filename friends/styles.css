@@ -1,0 +1,265 @@
+.friends-section {
+    padding: 20px;
+}
+
+.search-bar {
+    background: #111;
+    border-radius: 12px;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar i {
+    color: #666;
+    margin-right: 10px;
+}
+
+.search-bar input {
+    background: none;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+.search-bar input::placeholder {
+    color: #666;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.friends-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: #111;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.friends-list {
+    margin-bottom: 20px;
+}
+
+.friend-card {
+    background: #111;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.friend-avatar {
+    position: relative;
+    margin-right: 15px;
+}
+
+.avatar-circle {
+    width: 50px;
+    height: 50px;
+    background: #222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.online-status {
+    width: 12px;
+    height: 12px;
+    background: #666;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #111;
+}
+
+.online-status.active {
+    background: #4CAF50;
+}
+
+.friend-info {
+    flex-grow: 1;
+}
+
+.friend-name {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.friend-status {
+    font-size: 12px;
+    color: #666;
+}
+
+.invite-btn {
+    background: #0066ff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.add-friend-btn {
+    width: 100%;
+    background: #0066ff;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-friend-btn:hover {
+    background: #0052cc;
+}
+
+/* Animations */
+.friend-card {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.invite-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.emoji-header {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+.how-it-works {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.steps {
+    position: relative;
+}
+
+.steps::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #333;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.step-marker {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+    z-index: 1;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 5px 0;
+}
+
+.step-content p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.invite-btn {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    right: 20px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Animation for steps */
+.step {
+    animation: slideIn 0.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.step:nth-child(1) { animation-delay: 0.1s; }
+.step:nth-child(2) { animation-delay: 0.2s; }
+.step:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 

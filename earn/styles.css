@@ -1,0 +1,139 @@
+.tabs-row {
+    display: flex;
+    overflow-x: auto;
+    padding: 15px;
+    gap: 15px;
+    background: #000;
+}
+
+.tab {
+    color: #666;
+    font-size: 14px;
+    padding: 5px 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.tab.active {
+    color: #fff;
+    position: relative;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.earn-cards {
+    padding: 15px;
+}
+
+.earn-card {
+    background: #111;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    animation: slideIn 0.3s ease-out;
+}
+
+.earn-card.featured {
+    background: #1a1a1a;
+    padding: 20px;
+}
+
+.featured .card-content {
+    text-align: left;
+}
+
+.featured h2 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-left i {
+    font-size: 24px;
+    color: #fff;
+    width: 24px;
+}
+
+.card-info h3 {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    color: #fff;
+}
+
+.reward {
+    color: #666;
+    font-size: 14px;
+}
+
+.start-btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background: #444;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.claim-btn {
+    background: #333;
+    color: #666;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.claim-btn:hover {
+    background: #444;
+}
+
+.tab-content {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 

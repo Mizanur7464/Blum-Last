@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+.profile-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-circle {
+    width: 60px;
+    height: 60px;
+    background: #0066ff;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.username {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.balance {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.game-card {
+    margin: 20px;
+    background: #111;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.game-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.game-icon {
+    font-size: 24px;
+}
+
+.game-info {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.game-title {
+    font-size: 16px;
+}
+
+.game-count {
+    color: #666;
+    font-size: 14px;
+}
+
+.play-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.farming-section {
+    margin: 20px;
+}
+
+.farming-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #1a1a1a;
+    color: #888;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+}
+
+.farming-initial {
+    color: #888;
+    font-size: 14px;
+}
+
+.farming-details {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.farming-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.farming-amount {
+    color: #888;
+}
+
+.farming-time {
+    color: #666;
+    font-size: 12px;
+}
+
+.collect-btn {
+    display: none;
+}
+
+.nav-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 390px;
+    height: 60px;
+    background: #111;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+    font-size: 12px;
+}
+
+.nav-item i {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.nav-item.active {
+    color: #fff;
+} 
